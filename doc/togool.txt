@@ -1,0 +1,107 @@
+*Togool* *Toggle-bool* - Toggle Boolean Values
+
+
+              ,----,                                              ~
+            ,/   .`|                                              ~
+          ,`   .'  :                                    ,--,      ~
+        ;    ;     /                                  ,--.'|      ~
+      .'___,/    ,' ,---.              ,---.    ,---. |  | :      ~
+      |    :     | '   ,'\  ,----._,. '   ,'\  '   ,'\:  : '      ~
+      ;    |.';  ;/   /   |/   /  ' //   /   |/   /   |  ' |      ~
+      `----'  |  .   ; ,. |   :     .   ; ,. .   ; ,. '  | |      ~
+          '   :  '   | |: |   | .\  '   | |: '   | |: |  | :      ~
+          |   |  '   | .; .   ; ';  '   | .; '   | .; '  : |__    ~
+          '   :  |   :    '   .   . |   :    |   :    |  | '.'|   ~
+          ;   |.' \   \  / `---`-'| |\   \  / \   \  /;  :    ;   ~
+          '---'    `----'  .'__/\_: | `----'   `----' |  ,   /    ~
+                           |   :    :                  ---`-'     ~
+                            \   \  /                              ~
+                             `--`-'                               ~
+
+
+==========================================================================
+CONTENTS                                                    *TogoolContents*
+
+
+  1. Usage ..................................... |TogoolUsage|
+  2. Configuration ............................. |TogoolConfiguration|
+    a. Global variables ........................ |TogoolGlobalVariables|
+  3. TODOs ..................................... |TogoolTODOs|
+  4. Bugs ...................................... |TogoolBugs|
+  5. License ................................... |TogoolLicense|
+
+==========================================================================
+Usage                                                          *TogoolUsage*
+
+
+Usage of |Togool| is incredibly simple, either use the command `Togool`,
+  the function `call Togool()`, or use the normal and insert mode mapping
+  which is, by default, `<C-b>` (which I realise may inconvenience some 
+  Tmux users).
+
+
+==========================================================================
+Configuration                                          *TogoolConfiguration*
+
+
+There are three global variables which configure the thing.
+
+
+--------------------------------------------------------------------------
+Global Variables                                     *TogoolGlobalVariables*
+
+
+  *g:togool_bools*                 Default:
+                        `[['1', 'true',  'True',  'y', 'Y', 'yes', 'Yes'],`
+                         `['0', 'false', 'False', 'n', 'N', 'no',  'No' ]]`
+
+                                   Desc: 2D list of additional aligning 
+                                         boolean true/false values
+
+                                         Note: Setting this manually with 
+                                               override |g:togool_extras|
+                                               false values
+
+
+  *g:togool_extras*                Default: `[[],[]]`
+
+                                   Desc: 2D list of additional aligning 
+                                         boolean true/false values
+
+
+  *g:togool_map*                   Default: `1`
+  
+                                   Desc: Specifies whether to create a 
+                                         map
+
+
+  *g:togool_map_val*               Default: `<C-b>`
+  
+                                   Desc: Specifies key(s) to map the 
+                                         function to
+
+
+==========================================================================
+TODOs                                                          *TogoolTODOs*
+
+
+- Maybe expand the list of default bools/swappable values
+
+
+==========================================================================
+Bugs                                                            *TogoolBugs*
+
+
+- None to mmy knowledge, feel free to let me know 
+  `https://github.com/bodneyc/togool.vim/issues`
+
+
+==========================================================================
+License                                                      *TogoolLicense*
+
+
+This plugin is distributed and can be redistributed under the GPL v2.0.
+  
+  See `$(git rev-parse --show-toplevel)/LICENSE`
+
+
